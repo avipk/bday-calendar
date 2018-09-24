@@ -1,0 +1,63 @@
+html {
+  height: 100vh;
+}
+body {
+  direction: rtl;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+.page-wrapper {
+  height: 100%;
+  border: 2px dashed red;
+  overflow: hidden;
+  position: relative;
+}
+
+.page-bg {
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+  position: absolute;
+  z-index: -1;
+}
+
+.page {
+  /* layout */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  margin-top: -3px;
+}
+
+.item-wrapper {
+  position: relative;
+}
+
+.item {
+  /* layout */
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.svg-frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.svg-frame svg {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
