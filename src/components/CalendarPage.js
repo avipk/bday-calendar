@@ -33,7 +33,7 @@ function CalendarPage({ monthIndex, monthName, daysInMonth, events, image }) {
             event={item.event}
             borderColor="#000"
             padding={3}
-            itemSpacing={2}
+            itemSpacing={6}
             width={20}
           />
         ))}
