@@ -1,23 +1,18 @@
-import React from 'react';
+import React from "react";
 
-function CalendarItemFrame({ cornerRadius, itemSpacing, width, children }) {
-  const wrapperStyle = {
-    padding: `${itemSpacing / 2}px`,
-    width: `${width}%`,
-  };
-
+function CalendarItemFrame({ children }) {
   return (
-    <div className="item-wrapper" style={wrapperStyle}>
-      <svg className="corner corner--tl" width={cornerRadius} height={cornerRadius}>
+    <div className="item-wrapper">
+      <svg className="corner corner--tl">
         <use href="#item-corner" />
       </svg>
-      <svg className="corner corner--tr" width={cornerRadius} height={cornerRadius}>
+      <svg className="corner corner--tr">
         <use href="#item-corner" />
       </svg>
-      <svg className="corner corner--bl" width={cornerRadius} height={cornerRadius}>
+      <svg className="corner corner--bl">
         <use href="#item-corner" />
       </svg>
-      <svg className="corner corner--br" width={cornerRadius} height={cornerRadius}>
+      <svg className="corner corner--br">
         <use href="#item-corner" />
       </svg>
       {children}

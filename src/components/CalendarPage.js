@@ -30,11 +30,7 @@ function CalendarPage({ monthIndex, monthName, daysInMonth, events, image }) {
             key={`ci_${index}`}
             date={item.date}
             name={item.name}
-            event={item.event}
-            borderColor="#000"
-            padding={3}
-            itemSpacing={6}
-            width={20}
+            event={item.event}            
           />
         ))}
       </div>
